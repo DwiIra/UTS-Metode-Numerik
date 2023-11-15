@@ -17,19 +17,19 @@ Buatlah Program untuk mencari solusi diatas
 Dan tunjukkan nilai x di setiap iterasinya
 
 # 1. Penyederhanaan Persamaan Non Linier
-Persamaan non linier yang diberikan adalah:
-3 + x³ - x = 4
-3 + x³ - x - 4 = 0
-x³ - x + 3 - 4 = 0
-x³ - x - 1 = 0 atau
+Persamaan non linier yang diberikan adalah: 
+3 + x³ - x = 4 
+3 + x³ - x - 4 = 0 
+x³ - x + 3 - 4 = 0 
+x³ - x - 1 = 0 atau 
 x³ - x = 1
 
 # Solusi : 
-Untuk mencari solusi dari persamaan non-linier tersebut,
-Anda dapat menggunakan metode iteratif seperti,
+Untuk mencari solusi dari persamaan non-linier tersebut, 
+Anda dapat menggunakan metode iteratif seperti, 
 metode Newton-Raphson untuk persamaan non-linier 
 Dan metode eliminasi untuk persamaan linier. 
-Berikut contoh program sederhana menggunakan Python:
+Berikut contoh program sederhana menggunakan Python: 
 
 def fungsi_non_linier(x):
     return x**3 - x + 1
