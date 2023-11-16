@@ -104,4 +104,3 @@ print(f"Solusi persamaan 2x - 4 = 8 adalah x = {solusi}")
 Output : 
 
 Solusi persamaan 2x - 4 = 8 adalah x = 6.0
-
