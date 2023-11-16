@@ -30,7 +30,7 @@ Untuk mencari solusi dari persamaan non-linier tersebut,
 Anda dapat menggunakan metode iteratif seperti, 
 metode Newton-Raphson untuk persamaan non-linier 
 Dan metode eliminasi untuk persamaan linier. 
-Berikut contoh program sederhana menggunakan Python:
+Berikut contoh program sederhana menggunakan Python: 
 
 	def fungsi_non_linier(x):
 	    return x**3 - x + 3 - 4
