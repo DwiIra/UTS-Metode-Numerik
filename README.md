@@ -30,7 +30,7 @@ Untuk mencari solusi dari persamaan non-linier tersebut,
 Anda dapat menggunakan metode iteratif seperti, 
 metode Newton-Raphson untuk persamaan non-linier 
 Dan metode eliminasi untuk persamaan linier. 
-Berikut contoh program sederhana menggunakan Python: 
+Berikut contoh program sederhana menggunakan ```Python: 
 
 	def fungsi_non_linier(x):
 	    return x**3 - x + 3 - 4
@@ -82,7 +82,7 @@ Jadi, solusi persamaan linier ini adalah x = 6.
 # Solusi 
 Persamaan linear dapat dipecahkan secara langsung tanpa menggunakan metode iteratif
 karena ini adalah persamaan linear sederhana. 
-Berikut adalah implementasi dalam Python:
+Berikut adalah implementasi dalam ```Python:
 
 	def solve_linear_equation(coef, constant):
         # Persamaan linear: coef * x = constant
