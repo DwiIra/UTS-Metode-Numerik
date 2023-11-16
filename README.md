@@ -32,36 +32,36 @@ metode Newton-Raphson untuk persamaan non-linier
 Dan metode eliminasi untuk persamaan linier. 
 Berikut contoh program sederhana menggunakan Python: 
 
-	```python
-	def fungsi_non_linier(x):
-	    return x**3 - x + 3 - 4
+```python
+def fungsi_non_linier(x):
+    return x**3 - x + 3 - 4
 	
-	def turunan_fungsi_non_linier(x):
-	    return 3*x**2 - 1
+def turunan_fungsi_non_linier(x):
+    return 3*x**2 - 1
 
-	def metode_newton_raphson(x0, toleransi, maks_iter):
-        iterasi = 1
-        while iterasi <= maks_iter:
-        	  x1 = x0 - fungsi_non_linier(x0) / turunan_fungsi_non_linier(x0)
-        	  print(f'Iterasi {iterasi}: x = {x1}')
+def metode_newton_raphson(x0, toleransi, maks_iter):
+    iterasi = 1
+    while iterasi <= maks_iter:
+          x1 = x0 - fungsi_non_linier(x0) / turunan_fungsi_non_linier(x0)
+          print(f'Iterasi {iterasi}: x = {x1}')
 
-        	  if abs(x1 - x0) < toleransi:
-              print(f'Solusi ditemukan setelah {iterasi} iterasi: x = {x1}')
-              return x1
+	  if abs(x1 - x0) < toleransi:
+	     print(f'Solusi ditemukan setelah {iterasi} iterasi: x = {x1}')
+	     return x1
 
-        	  x0 = x1
-        	  iterasi += 1
+	     x0 = x1
+	     iterasi += 1
 
-       print('Iterasi maksimum tercapai. Metode Newton-Raphson tidak konvergen.')
-       return None
+	  print('Iterasi maksimum tercapai. Metode Newton-Raphson tidak konvergen.')
+	  return None
 
-	# Tentukan nilai awal, toleransi, dan maksimum iterasi
-	x0 = 1.0
-	toleransi = 1e-6
-	maks_iter = 100
+# Tentukan nilai awal, toleransi, dan maksimum iterasi
+x0 = 1.0
+toleransi = 1e-6
+maks_iter = 100
 
-	# Panggil fungsi untuk metode Newton-Raphson
-	solusi = metode_newton_raphson(x0, toleransi, maks_iter)
+# Panggil fungsi untuk metode Newton-Raphson
+solusi = metode_newton_raphson(x0, toleransi, maks_iter)
 
 Output:
 
