@@ -2,77 +2,50 @@
 Dosen Pengampuh : Anggay Luri Pramana,M.Kom
 
 # Penulis : 
-Nama : Dwi Ira Fuji Antika
-
-Kelas : TIF Pagi A22
-
-NIM : 23422042
+Nama : Dwi Ira Fuji Antika 
+Kelas : TIF Pagi A22 
+NIM : 23422042 
 
 # Soal : 
-Persamaan Non Linier
-
-3 + x³ - x = 4
-
-Persamaan Linier
-
-2x - 4 = 8
-
-Intruksi :
-
-Carilah Solusi dari 2 soal diatas (metode bebas)
-
-Buatlah Program untuk mencari solusi diatas
-
-Dan tunjukkan nilai x di setiap iterasinya
-
+Persamaan Non Linier 
+3 + x³ - x = 4 
+Persamaan Linier 
+2x - 4 = 8 
+Intruksi : 
+Carilah Solusi dari 2 soal diatas (metode bebas) 
+Buatlah Program untuk mencari solusi diatas 
+Dan tunjukkan nilai x di setiap iterasinya 
 
 # 1. Penyederhanaan Persamaan Non Linier
 Persamaan non linier yang diberikan adalah: 
-
 3 + x³ - x = 4 
-
 3 + x³ - x - 4 = 0 
-
 x³ - x + 3 - 4 = 0 
-
 x³ - x - 1 = 0 atau 
-
 x³ - x = 1
 
 # Solusi : 
 Untuk mencari solusi dari persamaan non-linier tersebut, 
-
 Anda dapat menggunakan metode iteratif seperti, 
-
 metode Newton-Raphson untuk persamaan non-linier 
-
 Dan metode eliminasi untuk persamaan linier. 
-
 Berikut contoh program sederhana menggunakan Python: 
 
 def fungsi_non_linier(x):
-
     return x**3 - x + 1
-
+	
 def turunan_fungsi_non_linier(x):
-
     return 3*x**2 - 1
 
 def metode_newton_raphson(x0, toleransi, iterasi_max):
-
     iterasi = 0
-    
     while True:
-    
         iterasi += 1
-        
         x1 = x0 - (fungsi_non_linier(x0) / turunan_fungsi_non_linier(x0))
-        
+		
         print(f'Iterasi-{iterasi}: x = {x1}')
-
         if abs(x1 - x0) < toleransi or iterasi >= iterasi_max:
             break
-
         x0 = x1
 
     return x1
