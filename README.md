@@ -30,7 +30,6 @@ Anda dapat menggunakan metode iteratif seperti,
 metode Newton-Raphson untuk persamaan non-linier 
 Dan metode eliminasi untuk persamaan linier. 
 Berikut contoh program sederhana menggunakan Python: 
-
 def fungsi_non_linier(x):
     return x**3 - x + 1
 
@@ -51,12 +50,12 @@ def metode_newton_raphson(x0, toleransi, iterasi_max):
 
     return x1
 
-#Tentukan nilai awal, toleransi, dan maksimum iterasi
+# Tentukan nilai awal, toleransi, dan maksimum iterasi
 nilai_awal = 1.0
 toleransi = 1e-6
 maksimum_iterasi = 100
 
-#Panggil fungsi dengan nilai-nilai yang telah ditentukan
+# Panggil fungsi dengan nilai-nilai yang telah ditentukan
 solusi_non_linier = metode_newton_raphson(nilai_awal, toleransi, maksimum_iterasi)
 print(f'Solusi persamaan non-linier: x = {solusi_non_linier}')
 
@@ -81,24 +80,24 @@ Jadi, solusi persamaan linier ini adalah x = 6.
 Persamaan linear dapat dipecahkan secara langsung tanpa menggunakan metode iteratif 
 karena ini adalah persamaan linear sederhana.
 Berikut adalah implementasi dalam Python:
-
 def solve_linear_equation(coef, constant):
     # Persamaan linear: coef * x = constant
     x = constant / coef
     return x
 
-#Koefisien persamaan
+# Koefisien persamaan
 coef = 2
 
-#Konstanta persamaan
+# Konstanta persamaan
 constant = 8 + 4  # Sisi kanan persamaan dipindahkan ke sisi kiri dengan menggabungkan konstanta
 
-#Panggil fungsi untuk menyelesaikan persamaan linear
+# Panggil fungsi untuk menyelesaikan persamaan linear
 solusi = solve_linear_equation(coef, constant)
 
-#Cetak solusi
+# Cetak solusi
 print(f"Solusi persamaan 2x - 4 = 8 adalah x = {solusi}")
 
 Output : 
 
 Solusi persamaan 2x - 4 = 8 adalah x = 6.0
+
