@@ -61,7 +61,8 @@ toleransi = 1e-6
 maks_iter = 100
 
 # Panggil fungsi untuk metode Newton-Raphson
-solusi = metode_newton_raphson(x0, toleransi, maks_iter)```
+solusi = metode_newton_raphson(x0, toleransi, maks_iter)
+```
 
 Output:
 
@@ -101,7 +102,8 @@ constant = 8 + 4  # Sisi kanan persamaan dipindahkan ke sisi kiri dengan menggab
 solusi = solve_linear_equation(coef, constant)
 
 # Cetak solusi
-print(f"Solusi persamaan 2x - 4 = 8 adalah x = {solusi}")```
+print(f"Solusi persamaan 2x - 4 = 8 adalah x = {solusi}")
+```
 
 Output :
 
