@@ -4,7 +4,7 @@ Dosen Pengampuh : Anggay Luri Pramana,M.Kom
 # Penulis : 
 Nama : Dwi Ira Fuji Antika 
 Kelas : TIF Pagi A22 
-NIM : 23422042 
+NIM : 23422042  
 
 # Soal : 
 Persamaan Non Linier 
